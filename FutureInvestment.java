@@ -33,6 +33,7 @@ public class FutureInvestment {
         //calculate monthly rate
         Double monthlyInvestmentRate = anualInterestRate / 1200;
         
+        //calculate acumulated value
         Double acumulatedValue = investmentAmount 
                 * Math.pow((1 + monthlyInvestmentRate), (numOfYears * 12));
         NumberFormat defaultFormat = NumberFormat.getCurrencyInstance();
